@@ -100,6 +100,11 @@ header{
     color: rgb(167,0,0);
 }
 
+.Contact a:hover{
+    text-decoration: underline;
+    color: rgb(229,73,0);
+}
+
 h1{
     text-transform: uppercase;
     color: white;
