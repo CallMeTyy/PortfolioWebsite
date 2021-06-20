@@ -31,11 +31,14 @@ header{
 }
 
 .Splash{
-    background-image: url(../images/splash.jpg);
+    background-image: url(../images/splash.jpg.png);
+    background-attachment: fixed;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     height:400px;
     position:relative;
+    
 }
 
 .Splash h1{
