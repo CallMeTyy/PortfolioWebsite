@@ -49,6 +49,7 @@ aside p{
     position: -webkit-sticky;
     display: block;
     width: 100vw;
+    height: 20px;
     left: 0;
     top: 0;
 }
@@ -62,3 +63,14 @@ body{
     margin-top: 10px;
     margin-bottom: -20px;
 }
+
+.Splash{
+    background-image: url(../images/splash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:400px;
+    position:relative;
+    
+}
+
