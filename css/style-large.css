@@ -44,6 +44,10 @@ h1{
     -webkit-border-radius: 5px 5px 0px 0px;
 }
 
+.center img{
+    width: 372px;
+}
+
 .ArcadeText{
     display:flex;
 }
