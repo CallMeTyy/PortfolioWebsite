@@ -17,6 +17,20 @@
     padding: 10px;
 }
 
+.main img{
+    width: 650px;
+}
+
+.left{
+    float:left;
+    margin: 20px 40px 40px 40px;
+}
+
+.right{
+    float:right;
+    margin: 20px 40px 40px 40px;
+}
+
 .MainB>*, .MainA{
 
     border-radius: 8px 8px 0px 0px;
@@ -28,5 +42,15 @@ h1{
     border-radius: 5px 5px 0px 0px;
     -moz-border-radius: 5px 5px 0px 0px;
     -webkit-border-radius: 5px 5px 0px 0px;
+}
+
+.ArcadeText{
+    display:flex;
+}
+.ArcadeText1{
+    width: 700px;
+}
+.ArcadeText2{
+    width: 600px;
 }
 
