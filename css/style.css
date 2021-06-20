@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-@import url("style-small.css") screen and (max-width: 906px);
-@import url("style-large.css") screen and (min-width: 906px);
+@import url("style-small.css") screen and (max-width: 1650px);
+@import url("style-large.css") screen and (min-width: 1650px);
 
 /*
 GOOD RED: rgb(167,0,0)
@@ -53,7 +53,7 @@ header{
     position: relative;
     text-align: center;
     top: 230px;
-    font-weight: 200;
+    font-weight: 300;
     color: white;
 }
 
@@ -158,14 +158,10 @@ p{
 aside{
     background-color: rgba(240,237,238, 0.9);
     text-align: center;
-    height: 1050px;
+    height: 1150px;
 }
 
-.Introduction img{
-    width:50%;
-    margin-top: 10px;
-    margin-bottom: -20px;
-}
+
 
 .main{
     text-align: center;

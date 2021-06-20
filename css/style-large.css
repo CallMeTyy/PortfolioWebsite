@@ -38,6 +38,12 @@
     -moz-border-radius: 8px 8px 0px 0px;
 }
 
+.Introduction img{
+    width:50%;
+    margin-top: 10px;
+    margin-bottom: -20px;
+}
+
 h1{
     border-radius: 5px 5px 0px 0px;
     -moz-border-radius: 5px 5px 0px 0px;
