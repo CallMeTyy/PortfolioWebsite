@@ -121,9 +121,12 @@ h2{
 }
 
 h3{
-    margin: 80px 0px;
     text-decoration: underline;
     text-align: center;
+}
+
+.textblock{
+    margin-bottom: 60px;
 }
 
 h3 a{
