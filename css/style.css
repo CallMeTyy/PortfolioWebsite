@@ -121,8 +121,9 @@ h2{
 }
 
 h3{
-    margin: 80px;
+    margin: 80px 0px;
     text-decoration: underline;
+    text-align: center;
 }
 
 h3 a{
