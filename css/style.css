@@ -130,6 +130,11 @@ h3 a{
     text-decoration: underline;
 }
 
+h3 a:hover{
+    color: rgb(229,73,0);
+    text-decoration: underline;
+}
+
 .MainA{
     margin: 10px 0;
     background-color: rgb(200,240,255);
