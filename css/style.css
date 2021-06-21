@@ -120,6 +120,16 @@ h2{
     font-weight: 500;
 }
 
+h3{
+    margin: 80px;
+    text-decoration: underline;
+}
+
+h3 a{
+    color: rgb(167,0,0);
+    text-decoration: underline;
+}
+
 .MainA{
     margin: 10px 0;
     background-color: rgb(200,240,255);
