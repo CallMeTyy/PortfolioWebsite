@@ -58,15 +58,19 @@ header{
 
 .Menu{
     background-color: rgb(167,0,0);
-    text-align: center;
+    text-align: left;
 }
 
 .Menu a{
-    line-height: 40px;
     padding: 0 50px;
     color: white;
     text-decoration: none;
     font-weight: 500;
+}
+
+nav a:hover{
+    background-color:rgb(255,0,0);
+    
 }
 
 .MainB a{
@@ -79,7 +83,7 @@ header{
 }
 
 .Menu li{
-    background-color: rgb(229,73,0);
+    background-color: rgb(167,0,0);
 }
 
 .Menu li:hover{
@@ -217,6 +221,8 @@ footer p{
     position: relative;
     top:-15px
 }
+
+
 
 
 
