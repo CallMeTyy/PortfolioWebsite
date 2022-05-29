@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-@import url("style-small.css") screen and (max-width: 1650px);
-@import url("style-large.css") screen and (min-width: 1650px);
+@import url("style-small.css") screen and (max-width: 1400px);
+@import url("style-large.css") screen and (min-width: 1400px);
 
 /*
 GOOD RED: rgb(167,0,0)
@@ -21,14 +21,15 @@ body{
     flex-wrap: wrap;
     font-family: 'Lato', sans-serif;
     font-weight: 300;
-/*    background-color: rgb(104,105,99);*/
-    background-image: url(../images/BGsmol.png);
+    background-color: rgb(104,105,99);
+    /*background-image: url(../images/BGsmol.png);*/
     background-repeat:repeat;
 }
 
 header{
     width: 100vw;
 }
+
 
 
 .Splash h1{
@@ -66,11 +67,13 @@ header{
     color: white;
     text-decoration: none;
     font-weight: 500;
+    line-height: 50px;
 }
 
-nav a:hover{
+.SidePButton:hover{
+    height:fit-content;
+    width:fit-content;
     background-color:rgb(255,0,0);
-    
 }
 
 .MainB a{
@@ -178,7 +181,7 @@ p{
 aside{
     background-color: rgba(240,237,238, 0.9);
     text-align: center;
-    height: 1050px;
+    height:fit-content;
 }
 
 
