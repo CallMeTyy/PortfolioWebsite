@@ -57,6 +57,31 @@ header{
     top:0;
 }
 
+.Splash2 h1{
+    font-size: 50px;
+    background-color: transparent;
+    position: relative;
+    top: 230px;
+    font-weight: 300;
+}
+
+.Splash2 h2{
+    font-size: 20px;
+    background-color: transparent;
+    position: relative;
+    text-align: center;
+    top: 230px;
+    font-weight: 300;
+    color: white;
+}
+
+
+.Splash2 img{
+    position: absolute;
+    right: 0;
+    top:0;
+}
+
 .Menu{
     background-color: rgb(167,0,0);
     text-align: left;

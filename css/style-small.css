@@ -72,3 +72,12 @@ body{
     position:relative;
 }
 
+.Splash2{
+    background-image: url(../images/bzoorodeibis.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:400px;
+    position:relative;
+}
+
