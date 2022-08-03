@@ -12,7 +12,9 @@
     order: 1;
 }
 
-
+.main p{
+    margin: 20px 20px;
+}
 
 .MainB{
    flex-direction: column; 
