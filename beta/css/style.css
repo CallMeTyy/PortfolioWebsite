@@ -155,13 +155,18 @@ form button{
   animation: bounce 1s infinite alternate;
 }
 
+.profile-image-alt {
+    width: 150px;
+    border-radius: 50%;
+}
+
 @keyframes bounce {
   from {
     transform: translateY(0px);
   }
 
   to {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
   }
 }
 
