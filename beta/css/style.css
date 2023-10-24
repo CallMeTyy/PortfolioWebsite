@@ -14,7 +14,7 @@
   --bg-primary: #ffffff;
   --text-color: #222222;
   --text-color-two: #ffffff;
-  --bg-secondary: #000000;
+  --bg-secondary: #1f1f1f;
   --card-background: #f4f4f4;
   --bg-secondary-two: #111111;
 
@@ -34,7 +34,7 @@
 [data-theme="dark"] {
   --primary-color: #ffcd42;
   --secondary-color: #ffd35c;
-  --bg-primary: #000000;
+  --bg-primary: #1f1f1f;
   --text-color: #ffffff;
   --text-color-two: #222222;
   --bg-secondary: #ffffff;
