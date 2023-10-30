@@ -221,6 +221,11 @@ form button{
 
 .central-info{
   margin-top: 30px;
+  max-width: 90vw;
+}
+
+iframe{
+  max-width: 90vw;
 }
 
 .central-info p{
