@@ -48,42 +48,42 @@
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="assets/favicon/apple-touch-icon.png"
+      href="../assets/favicon/apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="/assets/favicon/favicon-16x16.png"
+      href="../assets/favicon/favicon-16x16.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="assets/favicon/favicon-32x32.png"
+      href="../assets/favicon/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="192x192"
-      href="assets/favicon/android-chrome-192x192.png"
+      href="../assets/favicon/android-chrome-192x192.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="512x512"
-      href="assets/favicon/android-chrome-512x512.png"
+      href="../assets/favicon/android-chrome-512x512.png"
     />
-    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico" />
-    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+    <link rel="icon" type="image/x-icon" href="../assets/favicon/favicon.ico" />
+    <link rel="manifest" href="../assets/favicon/site.webmanifest" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
       integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/utilities.css" />
   </head>
   <body>
     <header id="hero">
@@ -92,19 +92,19 @@
         <div class="container">
           <!-- Logo -->
           <h1 id="logo">
-            <a href="index.html"
-              ><img src="./assets/logo.png" alt="Your Logo"
+            <a href="../index.html"
+              ><img src="../assets/logo.png" alt="Your Logo"
             /></a>
           </h1>
           <!-- Navbar links -->
           <ul class="nav-menu">
-            <li><a class="nav-link" href="projects.html">PROJECTS</a></li>
-            <li><a class="nav-link" href="contact.html">CONTACT</a></li>
+            <li><a class="nav-link" href="../projects.html">PROJECTS</a></li>
+            <li><a class="nav-link" href="../contact.html">CONTACT</a></li>
             <!--<li><a class="nav-link" href="#">RESUME</a></li>-->
             <li>
               <a
                 class="nav-link btn btn-primary"
-                href="resume.html"
+                href="../resume.html"
                 >RESUME <i class="fas fa-arrow-right"></i
               ></a>
             </li>
@@ -113,8 +113,8 @@
             <div class="theme-switch">
               <input type="checkbox" id="switch"/>
               <label class="toggle-icons" for="switch">
-                <img class="moon" src="assets/moon.svg" />
-                <img class="sun" src="assets/sun.svg" />
+                <img class="moon" src="../assets/moon.svg" />
+                <img class="sun" src="../assets/sun.svg" />
               </label>
             </div>
             <!-- Hamburger menu -->
@@ -128,24 +128,31 @@
       </nav>
 
       <section class="header-container">
-        <img
-          class="profile-image-alt"
-          src="assets/profile-image-me.png"
-          alt=""
-        />
-        <h1>Hoi! I am Tycho</h1>
-
         <div class="content-text">
-          <h2>Game Programmer &</h2>
-          <h2>VR Enthusiast</h2>
+          <h2>Sand Shader</h2><br>
 
-          <p>
-            A programmer focussed on creating both serious and entertaining games for Virtual Reality or PC.
-          </p>
+          <img src="../assets/project/Sand.png">
+          
+          <div class="central-info">
+            <h3>General Information</h3>
+            <p>
+              <b>Summary:</b> The sand shader is a simple shader made for the built in render pipeline of Unity. It was created to learn more about shader programming and interactive shader creation.<br>
+              <b>Coding Platform:</b> Unity<br>
+              <b>Target Platform:</b> PC<br>
+              <b>Development Time:</b> 2 weeks<br>
+              <b>Solo Development</b>
+            </p>
+            <h3>Description & Contributions</h3>
+            <p>
+              This shader is a simple shader that combines tessellation, heightmap implementation and vertex offset to create footsteps in sand. A splatmap is keeping track where the player is compared to the terrain, which generates small footsteps after walking.<br><br>
+              <b>My Contributions</b><br>
+              My learning focus of this project is:<br>
+              - Shader programming in Unity - Tessellation, heightmap implementation & vertex offsets<br>
+              - Sending data to self-programmed shaders<br>
+              - Creating dynamic splatmaps to determine footstep positions<br>                  
+            </p>
+          </div>
         </div>
-        <a href="https://www.linkedin.com/in/tychotuitert/" class="btn btn-secondary" target="_blank">Find me on LinkedIn</a>
-        <a href="https://github.com/CallMeTyy/" class="btn btn-secondary" target="_blank">Follow my GitHub</a>
-        <a href="https://www.youtube.com/channel/UC-Ps335mTfS23h3TOwdGzdQ" class="btn btn-secondary" target="_blank">Find me on YouTube</a>
       </section>
     </header>
 
@@ -156,12 +163,12 @@
         <!-- Social links -->
         <div class="social">
           <a href="#" target="_blank"
-            ><img src="./assets/linkedin-icon.svg" alt="Linkedin"
+            ><img src="../assets/linkedin-icon.svg" alt="Linkedin"
           /></a>
-          <a href="#" target="_blank"><img src="./assets/github-icon.svg" alt="GitHub" /></a>
+          <a href="#" target="_blank"><img src="../assets/github-icon.svg" alt="GitHub" /></a>
         </div>
       </div>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="../js/script.js"></script>
   </body>
 </html>

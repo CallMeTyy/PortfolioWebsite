@@ -203,10 +203,46 @@ form button{
   font-size: 0.9rem;
 }
 
+.dark-text{
+  color:black;
+}
+
+.white-text{
+  color:white;
+}
+
+.bold{
+  font-weight:700;
+}
+
+.left-aligned{
+  position: absolute;
+}
+
+.central-info{
+  margin-top: 30px;
+}
+
+.central-info p{
+  text-align: left;
+}
+
+.central-info h3{
+  margin-top: 30px;
+}
+
+.central-info a{
+  text-decoration: underline;
+}
+.unreal{
+  width:25px;
+  height:25px;
+}
+
 .project-info {
   display: flex;
   justify-content: space-between;
-  opacity: 0;
+  opacity: 1;
   position: relative;
   transition: 0.5s ease-in-out;
 }

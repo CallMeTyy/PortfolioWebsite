@@ -59,9 +59,22 @@ if (currentTheme) {
   }
 }
 
+document.addEventListener('DOMContentLoaded', function () {
+  var card = document.querySelector('.card');
+  var links = card.querySelectorAll('a');
+  
+  for (var i = 0; i < links.length; i++) {
+      links[i].addEventListener('click', function (event) {
+          event.stopPropagation();
+          var link = this.getAttribute('href');
+          window.open(link, '_blank');
+          console.log("Link clicked!");
+      });
+  }
+});
+
 //Adding date
 
 let myDate = document.querySelector("#datee");
 
-const yes = new Date().getFullYear();
-myDate.innerHTML = yes;
+
