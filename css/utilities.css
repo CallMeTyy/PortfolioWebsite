@@ -148,7 +148,7 @@ h2::selection {
   background: url(../assets/project/NoMatchForAGhost.png) center center/cover;
 }
 #space{
-  background: url(../assets/project/NoMatchForAGhost.png) center center/cover;
+  background: url(../assets/project/SpaceVolcano.png) center center/cover;
 }
 #coastalcleanup{
   background: url(../assets/project/CoastalCleanup.png) center center/cover;
@@ -185,6 +185,9 @@ h2::selection {
 }
 #lumc{
   background: url(../assets/project/lumc.png) center center/cover;
+}
+#deepfake{
+  background: url(../assets/project/deepfake.png) center center/cover;
 }
 
 .thumbnailimg{

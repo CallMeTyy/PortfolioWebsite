@@ -129,41 +129,42 @@
 
       <section class="header-container">
         <div class="content-text">
-          <h2>LUMC Project</h2><br>
+          <h2>Deepfake Project</h2><br>
           <!--https://youtu.be/8WUG2c9FOGk  -  https://youtu.be/GvWx2pVQlB4-->
-          <img src="../assets/project/lumc.png" class="thumbnailimg">
+          <img src="../assets/project/deepfake.png" class="thumbnailimg">
           
           <div class="central-info">
             <h3>General Information</h3>
             <p>
-              <b>Summary:</b> The LUMC project is a project that tries to create a training simulation for doctors training to perform an intubation.
-              It's my internship project, and my introduction to Serious VR.<br>
-              <b>Coding Platform:</b> Unreal Engine<br>
-              <b>Target Platform:</b> PCVR<br>
+              <b>Summary:</b> The LUMC project is a project that tries to create simple pipeline for the creation of deepfakes using web calls.
+              It's a project I did during my internship.<br>
+              <b>Coding Platform:</b> Python, Docker<br>
+              <b>Target Platform:</b> PC/Server<br>
               <b>Development Time:</b> 20 Weeks<br>
               <b>Team Project at the Saxion XR Lab</b>
             </p>
             <h3>Description & Contributions</h3>
             <p>
-              During my time at the Saxion XR Lab I worked on various projects. During the LUMC project, my main project, I contributed to several "stages" of the intubation.
-              The entire procedure of intubation could be divided into several "stages", and as we were the first engineer interns who worked on the project we started from stage 0, the preparation.
-              The entire project was to be completed with multiple trainers, thus everything is networked synced.
+              During my time at the Saxion XR Lab I worked on various projects. During the deepfake project, my second project, I contributed to the creation of a pipeline to be ran in a server for easily creating deepfakes.
+              The project was created for a client that wanted to make a simple interface for children to generate simple deepfakes of others saying things.
+              During my time at the Saxion XR Lab we were in the initial phase of creating the backend. The project was to be further developed with a front end.
               <br><br>
               <b>My Contributions</b><br>
-              I worked on the "Monitoring", the "Anesthesia" and the "Patient Placement" stages. During my time at the XR lab I mainly used blueprints in Unreal Engine to create the interactions as demonstrated in the videos below.
+              I was the lead engineer of the project. Together with a company coach, I wrapped two python programs into a docker and created a simple command-line run program that runs both and outputs the result.
+              Everything was wrapped into a docker compose for easy access and use on a windows machine (destined for linux).
               The key points of this project are:<br>
-              - Creating dynamic cables and placable stickers<br>
-              - Recreating real life procedures in a digital environment<br>
-              - Utilizing blueprints and a bit of C++ to create interactions in Unreal Engine<br>              
-              - Recreating real life machines in a digital environment and adding interactions<br>
-              - Creating and altering animations for metahumans<br>       
-              - Creating interactions for a networking game<br>
-              - Working in an existing team and joining an existing codebase<br> 
-              <br>All projects at the Saxion XR Lab were not allowed to be shared, with exceptions for video showcases.         
+              - Utilizing python to use several deepfake creation libraries and programs<br>
+              - Creating a simple command line interface and the possibility for web call interactions<br>
+              - Utilizing docker to create a simple to download and install program<br>              
+              - Working in a small team to create a simple application<br>
+              - Utilizing several AIs to create audio and syncing videos<br>       
+              
+            <br>All projects at the Saxion XR Lab were not allowed to be shared, with exceptions for video showcases.
+            The video below demonstrates a simple version of the program. The web call gets processed, and the voice generator starts working.
+            The video generator waits until the voice is done, and then lip syncs a video or photo to the audio. It outputs it in a folder to be sent to the user.
             </p>
 
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/GvWx2pVQlB4?si=Nf7jQ9kW-HHSIjkO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><br>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/8WUG2c9FOGk?si=DEJbhs-zrccpzpIh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/wXDZ02QuIb0?si=4Rcn_P6L-arWe4B1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
         </div>
       </section>
