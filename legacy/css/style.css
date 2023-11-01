@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url("style-small.css") screen and (max-width: 1400px);
+@import url("style-large.css") screen and (min-width: 1400px);
+
+/*
+GOOD RED: rgb(167,0,0)
+ORANGE: rgb(229,73,0)
+BACKGROUND: rgb(104,105,99)
+BLUE ISH: rgb(131,148,144)
+WHITER BLUE: rgb(240,237,238)
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    background-color: rgb(104,105,99);
+    /*background-image: url(../images/BGsmol.png);*/
+    background-repeat:repeat;
+}
+
+header{
+    width: 100vw;
+}
+
+
+
+.Splash h1{
+    font-size: 50px;
+    background-color: transparent;
+    position: relative;
+    top: 230px;
+    font-weight: 300;
+}
+
+.Splash h2{
+    font-size: 20px;
+    background-color: transparent;
+    position: relative;
+    text-align: center;
+    top: 230px;
+    font-weight: 300;
+    color: white;
+}
+
+
+.Splash img{
+    position: absolute;
+    right: 0;
+    top:0;
+}
+
+.Splash2 h1{
+    font-size: 50px;
+    background-color: transparent;
+    position: relative;
+    top: 230px;
+    font-weight: 300;
+}
+
+.Splash2 h2{
+    font-size: 20px;
+    background-color: transparent;
+    position: relative;
+    text-align: center;
+    top: 230px;
+    font-weight: 300;
+    color: white;
+}
+
+
+.Splash2 img{
+    position: absolute;
+    right: 0;
+    top:0;
+}
+
+.Menu{
+    background-color: rgb(167,0,0);
+    text-align: left;
+}
+
+.Menu a{
+    padding: 0 50px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 50px;
+}
+
+.SidePButton{
+    height:fit-content;
+    width:fit-content;
+}
+
+.SidePButton:hover{
+    height:fit-content;
+    width:fit-content;
+    background-color:rgb(255,0,0);
+}
+
+.MainB a{
+    text-decoration: none;
+}
+
+.MainB ul{
+    list-style-type:none;
+    margin: 50px;
+}
+
+.Menu li{
+    background-color: rgb(167,0,0);
+}
+
+.Menu li:hover{
+    background-color: rgb(240,140,100);
+}
+
+.AboutMe p{
+    padding: 30px 10px;
+}
+
+.Contact p{
+    text-align: left;
+    line-height: 30px;
+}
+
+.Contact a{
+    text-decoration: underline;
+    color: rgb(167,0,0);
+}
+
+.Contact a:hover{
+    text-decoration: underline;
+    color: rgb(229,73,0);
+}
+
+h1{
+    text-transform: uppercase;
+    color: white;
+    background-color: rgb(131,148,144);
+    line-height: 40px;
+    text-align: center;
+    font-weight: 700;
+}
+
+h2{
+    text-transform: uppercase;
+    margin-top: 40px;
+    font-weight: 500;
+}
+
+h3{
+    text-decoration: underline;
+    text-align: center;
+}
+
+.textblock{
+    margin-bottom: 60px;
+}
+
+h3 a{
+    color: rgb(167,0,0);
+    text-decoration: underline;
+}
+
+h3 a:hover{
+    color: rgb(229,73,0);
+    text-decoration: underline;
+}
+
+.MainA{
+    margin: 10px 0;
+    background-color: rgb(200,240,255);
+    text-align: center;
+}
+
+.MainA p{
+    margin: 20px 80px;
+}
+
+
+p{
+    margin: 20px 50px;
+}
+
+
+.MainB{
+    margin-top: 30px;
+    display:flex;
+    width: 100vw;
+    justify-content: space-evenly;
+}
+
+
+
+.main figure{
+    margin: 40px;
+}
+
+aside{
+    background-color: rgba(240,237,238, 0.9);
+    text-align: center;
+    height:fit-content;
+}
+
+
+
+.main{
+    text-align: center;
+    background-color: rgba(240,237,238,0.9);
+    padding-bottom: 50px;
+}
+
+.main p{
+    text-align: justify;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.main h2{
+    margin-top: 100px;
+}
+
+.main h1{
+    margin-bottom: -50px;
+}
+
+.center img{
+    width: 362px;
+    margin: 10px;
+}
+
+footer{
+    height:30px;
+    width:100vw;
+    text-align: center;
+    color:white;
+    font-weight: 500;
+    background-color:rgb(167,0,0);
+}
+
+footer p{
+    position: relative;
+    top:-15px
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

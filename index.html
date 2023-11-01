@@ -1,235 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-    <head>
-        
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="icon" href="images/pfpNew.png">
-        <title>Tycho Tuitert</title>
-        
-        
-    </head>
-    
-    <body>
-        
-        <header>
-            <section class="Splash">
-                <h1> tycho Tuitert </h1>
-                <h2> VR Enthusiast | Game Engineer</h2>
-            </section>
-            <section class="Menu">
-                <nav>
-                    <section class = "SidePButton">
-                    <a href="PersonalPortfolio.html">Side Projects</a>    
-                    </section>                              
-                </nav>
-            </section>
-        </header>
-        
-       
-        
-        <main class="MainB">
-            
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Primary Meta Tags -->
+    <title>Ty's Portfolio</title>
+    <meta name="title" content="Ty's Portfolio" />
+    <meta
+      name="description"
+      content="Ty's Portfolio Website!"
+    />
 
-            <section class="main">
-                <article>
-                    <h1>My Work</h1>
-                    
-                    
-                    
-                    <h2>Apollo Arena</h2>
-                    <img src="images/ApolloArena.png" class="left">
-                    <p>Apollo Arena is a Multiplayer VR Bow Shooter. Use special arrows to fly through a spacestation or shoot down your opponent with flair! Join the arena or try out the tutorial now!</p>
-                    
-                    <p>This game was made as a team effort. As one of two engineers I mainly focussed on the Networking and Bow Physics. I also worked on other core aspects like more General Gameplay and setting up the VR Character Rig.</p>
-                    
-                    <p>
-                        Platform:                    PC<br>
-                        Code Language:         C#<br>
-                        Engine:                       Unity<br>
-                        Main Contributions:        Networking, Bow Physics, Rig Implementation<br>
-                    </p><br><br>
-						<h3><a href="https://ancientturtlestudios.com/" target="_blank">Website</a><br>
-						<h3><a href="https://www.youtube.com/watch?v=8wN94kZtVUM" target="_blank">Wirwar Festival - After Movie</a><br>
-						<h3><a href="https://youtu.be/LhNfXjP2Oz4" target="_blank">Full Gameplay Video</a><br>
-					<br>
-                    
-                    <h2>UELab VR</h2>
-                    <img src="images/UELabVR.png" class="right">
-                    <p>UELab VR is a small game made to learn the basics of the Unreal Engine in VR. It is a small arena fighter in which you fight cartoon characters with wacky physics.</p>
-                    
-                    <p>This game was made by myself with the help of the VR Expansion Plugin and assets made by others.</p>
-                    
-                    <p>
-                        Platform:                    PC<br>
-                        Scripting Form:         Blueprints<br>
-                        Engine:                       Unreal<br>
-                        Main Contributions:        All scripting aspects<br>
-                    </p><br><br><br><br><br>
-                    
-                    <h3><a href="https://youtu.be/gdyNLOGsHZk" target="_blank">Full Gameplay Video</a><br><br>
-                    <br><br><br>
-                    
-                    <h2>No Match For a Ghost</h2>
-                    <img src="images/NoMatchForAGhost.png" class="left">
-                    <p>No Match For A Ghost is a small detective puzzle game that was made for the VR Jam 2022. It was created in 9 days together with a friend. It combines a simple story with a little puzzle about saving a ghost, and the only light source available are matches.</p>
-                    
-                    <p></p>
-                    
-                    <p>
-                        Platform:                    PC<br>
-                        Code Language:         C#<br>
-                        Engine:                       Unity<br>
-                        Main Contributions:        All programming aspects<br>
-                    </p>
-                    <iframe frameborder="0" src="https://itch.io/embed/1654367?bg_color=e2e0e1&amp;fg_color=000000&amp;link_color=fa915b&amp;border_color=e2e0e1" width="552" height="167"><a href="https://theteun3.itch.io/no-match-for-a-ghost">No Match for a Ghost by Theteun3, Ty</a></iframe>
-                    
-                    <h2>SPACE</h2>
-                    <img src="images/SpaceVolcano.png" class="right">
-                    <p>SPACE is a local multiplayer party game. Beat your opponents in this wacky adventure in space, fly alpaca ships and try to not lose your 9 lives!</p>
-                    
-                    <p>This game was made as a team effort. As an engineer I worked on the networking, the backend game programming, the score system and the game flow. Basically all programming aspects.</p>
-                    
-                    <p>
-                        Platform:                    PC<br>
-                        Code Language:         C#<br>
-                        Engine:                       Unity<br>
-                        My Contribution:        All Coding Aspects<br>
-                    </p>
-                    <h3><a href="https://youtu.be/CUM5-3N787Q" target="_blank">Watch SPACE Full Playthrough</a><br><br>
-                        <a href="https://spacepiratecatpartygame.netlify.app/index.html" target="_blank">Visit Website</a>
-                    </h3>
-                    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://tychotuitert.dev/"
+    />
+    <meta property="og:title" content="Ty's Portfolio" />
+    <meta
+      property="og:description"
+      content="Ty's Portfolio Website!"
+    />
+    <meta
+      property="og:image"
+      content="https://prnt.sc/cFeM30pConAX"
+    />
 
-                    <h2>MagicaVR</h2>
-                    <img src="images/MagicaVR.png" class="left">
-                    <p>MagicaVR is a simple proof of concept VR game made in Unity that uses Motion Tracking & Voice Recognition</p>
-                    
-                    <p>This prototype was made by myself, with the help of two libraries; MiVRy and Pocket Sphinx. This was created for a school assignment, and helped learning how to work with VR. OpenXR was used to implement VR, allowing it to work on both Index & Quest 2.</p>
-                    <br><br>
-                    <p>
-                        Platform:                    PC<br>
-                        Code Language:         C#<br>
-                        Engine:                       Unity<br>
-                        My Contribution:        All Coding Aspects - used libraries<br>
-                    </p>
-                    <br>
-                    
-                    <h2>Coastal Cleanup</h2>
-                    <img src="images/CoastalCleanup.png" class="right">
-                    <p>Coastal Cleanup is a simple sandbox collector game where a Crab gets the difficult challenge of cleaning his home environment. Help by picking up trash and clean up his place!</p>
-                    
-                    <p>This game was made as a team effort. As an engineer I worked on procedural animation for the legs, the character controller, the interaction physics and the gamefication mechanics. Everything was made in Unity 3D. </p>
-                    
-                    <p>
-                        Platform:                    PC<br>
-                        Code Language:         C#<br>
-                        Engine:                       Unity<br>
-                        My Contribution:        Coding (Controller/Gameplay)<br>
-                    </p>
-                    <h3><a href="https://www.youtube.com/watch?v=FCAmhm1J1yY" target="_blank">Watch Coastal Cleanup Trailer</a></h3>
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://tychotuitert.dev/"
+    />
+    <meta property="twitter:title" content="Ty's Portfolio" />
+    <meta
+      property="twitter:description"
+      content="Ty's Portfolio Website!"
+    />
+    <meta
+      property="twitter:image"
+      content="https://prnt.sc/cFeM30pConAX"
+    />
 
-                    
-                    <h2>Polliword</h2>
-                    <img src="images/Polliword.png" class="left">
-                    <p>Polliword is a Physics Puzzle based game where you play as a Frog. You can use your tongue to collect words, which can alter the world. Use these words to finish puzzles, and platform your way to the end!</p>
-                    
-                    <p>This game was made as a team effort. As the only engineer I did all the coding. All the physics were made from scratch, only the engine basics (object hierarchy and rotation/position alteration) was done using the existing code.</p>
-                    
-                    <p>
-                        Platform:                    PC<br>
-                        Code Language:         C#<br>
-                        Engine:                       GXP Engine (.NET)<br>
-                        My Contribution:        All coding (Physics & Gameplay)<br>
-                    </p>
-                    <h3><a href="https://www.youtube.com/watch?v=eg4mORtmOHY&ab_channel=Dejanneman" target="_blank">Polliword Gameplay Video</a></h3>
-                    
-                    
-                    <h2>Space Race</h2>
-                    <img src="images/SpaceRace.png" class="right">
-                    <p>Space Race is a Local Multiplayer Chaotic Platformer where you play and a friend play as one of the astronauts escaping the spaceship. Using a rocket launcher you can open doors, shoot eachother or lay down traps as you reach the end!</p>
-                    
-                    <p>This game was made as a team effort. As the only engineer I did all the coding. While making this game I used the GXP Engine built in Collisions to create the gameplay. </p>
-                    
-                    <p>
-                        Platform:                    PC<br>
-                        Code Language:         C#<br>
-                        Engine:                       GXP Engine (.NET)<br>
-                        My Contribution:        All coding (Gameplay)<br>
-                    </p>
-                    <h3><a href="https://www.youtube.com/watch?v=19UOozrpk_U&ab_channel=Tycho" target="_blank">Watch Space Race Trailer</a></h3>
-                    
-                    <h2>Vector arcade</h2>
-                    <div class="center">
-                        <img src="images/VectorArcade3.png">
-                        <img src="images/VectorArcade.png">
-                        <img src="images/VectorArcade2.png">
-                    </div >
-                    <div class="ArcadeText">
-                        <div class="ArcadeText1">
-                            <p>
-                                Vector Arcade is a small game made as a proof of concept of a small physics engine built within the .NET environment. The game consists of two minigames: A bullet hell game and a small platformer. This game was made entirely by myself.      
-                            </p>
-                        </div>
-                        <div class="ArcadeText2">
-                            <p>
-                                Platform:                    PC<br>
-                                Code Language:         C#<br>
-                                Engine:                       GXP Engine (.NET)<br>
-                                My Contribution:        All Aspects<br>
-                            </p>
-                        </div>
-                    </div>
-                    <h2>Nightlight</h2>
-                    <img src="images/NightLight.png" class="left">
-                    <p>Nightlight is a small Point and Click game where you play as the main character Boyo. Go through different scenes with different characters to help everyone out! This game was made with children in mind.</p>
-                    
-                    <p>This game was made as a team effort. This game was built by me and one other Engineer. I did most of the gameplay programming and some of the scenes, and my co-engineer did mostly the scene programming.</p>
-                    
-                    <p>
-                        Platform:                    PC<br>
-                        Code Language:         Java<br>
-                        Engine:                       Processing<br>
-                        My Contribution:        Coding (Gameplay)<br>
-                    </p>
-                    <h3><a href="https://www.youtube.com/watch?v=pzXxGkuDxtY&ab_channel=Sixfool" target="_blank">Watch Nightlight Trailer</a></h3>
-                </article>
-            </section>
+    <!-- Link -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="assets/favicon/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="assets/favicon/android-chrome-512x512.png"
+    />
+    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico" />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
+  </head>
+  <body>
+    <header id="hero">
+      <!-- Navbar -->
+      <nav class="navbar">
+        <div class="container">
+          <!-- Logo -->
+          <h1 id="logo">
+            <a href="index.html"
+              ><img src="./assets/logo.png" alt="Your Logo"
+            /></a>
+          </h1>
+          <!-- Navbar links -->
+          <ul class="nav-menu">
+            <li><a class="nav-link" href="projects.html">PROJECTS</a></li>
+            <li><a class="nav-link" href="contact.html">CONTACT</a></li>
+            <!-- <li><a class="nav-link" href="#">RESUME</a></li>-->
+            <li>
+              <a
+                class="nav-link btn btn-primary"
+                href="resume.html"
+                >RESUME <i class="fas fa-arrow-right"></i
+              ></a>
+            </li>
 
-            <aside>
-                <article class="Introduction">
-                    <h1>Introduction</h1>
-                    <img src="images/pfpNew.png">
-                    <p>
-                        My Name is Tycho Tuitert. I'm a hardworking guy with a ton of motivation looking to work in the game industry while having some fun!
-                    </p>
-                </article>
-                <article class="Contact">
-                    <h1>Contact</h1>
-                    <p>Email: Tycho.Tuitert@outlook.com</p>
-                    <p>LinkedIn: <a href="https://linkedin.com/in/tychotuitert/" target="_blank">Tycho Tuitert On LinkedIn</a></p>
-                    <p>GitHub: <a href="https://github.com/CallMeTyy" target="_blank">Tycho Tuitert on Github</a></p>
-                    <p>Discord: Ty#0270</p>
-                </article>
-                <article class="AboutMe">
-                    <h1>About Me</h1>
-                    
-                    <p>
-                        Bonjour! I'm a passionate, eager to learn but most importantly fun guy trying to make some cool games! 
-                        My main goals are to bring a smile to those that play my games, and making sure everyone in my team during the creation of the game is also smiling!
-                        I can work on my own, but I also really like and am capable of working in teams!   
-                        I'm very passionate about VR and everything related, and my end goal is to help creating some innovative games for VR.
-                    </p>
-                </article>
-            </aside>
-        </main>
-        <footer>
-            <p>©2022 Tycho Tuitert</p>
-        </footer>
+            <!-- Toggle switch -->
+            <div class="theme-switch">
+              <input type="checkbox" id="switch"/>
+              <label class="toggle-icons" for="switch">
+                <img class="moon" src="assets/moon.svg" />
+                <img class="sun" src="assets/sun.svg" />
+              </label>
+            </div>
+            <!-- Hamburger menu -->
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </nav>
+
+      <section class="header-container">
+        <img
+          class="profile-image"
+          src="assets/profile-image.png"
+          alt=""
+        />
+        <h1>Hoi! I am Tycho</h1>
+
+        <div class="content-text">
+          <h2>Game Programmer &</h2>
+          <h2>VR Enthusiast</h2>
+
+          <p>
+            A programmer focussed on creating both serious and entertaining games for Virtual Reality or PC.
+          </p>
+        </div>
+        <a
+          href="https://www.linkedin.com/in/tychotuitert/"
+          class="btn btn-secondary"
+          target="_blank"
+          >Connect With Me</a
+        >
+      </section>
+    </header>
+
+    <!-- Projects -->
+    <section id="games" class="project-container container">
+      <div class="division"></div>
+      <div class="content-text">
+        <h2>Highlighted Projects</h2>
+        <p>Some of my favorite projects I worked on!</p>
+      </div>
+
+      <article class="project">
+        <!-- Project 1 -->
+
+          <div onclick="location.href='Pages/ApolloArena.html'" class="card" title="View more...">
+            <div class="project-info">
+              <div class="project-bio">
+                <h3>Apollo Arena</h3>
+                <p>A Multiplayer VR Bow Shooter made in Unity</p>
+              </div>
+              <i class="fab fa-unity left-aligned" title="Created with Unity"></i>
+              <div class="project-link">
+                <a href="https://www.youtube.com/watch?v=-sGgk63UIRQ" target="_blank"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
         
-    </body>
-    
-    
+
+        <!-- Project 2 -->
+        <div onclick="location.href='Pages/UeLabVR.html'" class="card" title="View more...">
+          <div class="project-info">
+            <div class="project-bio">
+              <h3>UE Lab VR</h3>
+              <p>A simple VR arena fighter made in Unreal</p>
+            </div>
+            <img class="unreal left-aligned" src="assets/unrealico-white.png" title="Created with Unreal Engine 5">
+            <div class="project-link">
+              <a href="https://youtu.be/gdyNLOGsHZk" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Porject 3 -->
+        <div onclick="location.href='Pages/NoMatchForAGhost.html'" class="card" title="View more...">
+          <div class="project-info">
+            <div class="project-bio">
+              <h3>No Match For A Ghost</h3>
+              <p>A VR Detective Puzzle game made in Unity</p>
+            </div>
+            <i class="fab fa-unity left-aligned" title="Created with Unity"></i>
+            <div class="project-link">
+              <a href="https://theteun3.itch.io/no-match-for-a-ghost" target="_blank"><i class="fab fa-itch-io"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div onclick="location.href='Pages/SPACE.html'" class="card" title="View more...">
+          <div class="project-info">
+            <div class="project-bio">
+              <h3>SPACE</h3>
+              <p>A local multiplayer party game made in Unity</p>
+            </div>
+            <i class="fab fa-unity left-aligned" title="Created with Unity"></i>
+            <div class="project-link">
+              <a href="https://github.com/CallMeTyy/SPACE" target="_blank" title="Visit Game Github"><i class="fab fa-github"></i></a>
+              <a href="https://github.com/CallMeTyy/SPACEPhone" target="_blank" title="Visit Phone App Github"><i class="fab fa-github"></i></a>
+              <a href="https://youtu.be/CUM5-3N787Q" target="_blank" title="Watch trailer video"><i class="fab fa-youtube"></i></a>
+              <a href="https://spacepiratecatpartygame.netlify.app/" target="_blank" title="Visit Game Webpage"><i class="fas fa-globe"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div onclick="location.href='Pages/CoastalCleanup.html'" class="card" title="View more...">
+          <div class="project-info">
+            <div class="project-bio">
+              <h3>Coastal Cleanup</h3>
+              <p>A serious game for PC made in Unity</p>
+            </div>
+            <i class="fab fa-unity left-aligned" title="Created with Unity"></i>
+            <div class="project-link">
+              <a href="https://www.youtube.com/watch?v=FCAmhm1J1yY" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div onclick="location.href='Pages/ProceduralTown.html'" href="" class="card dark-card" title="View more...">
+          <div class="project-info dark-text">
+            <div class="project-bio">
+              <h3>Procedural Town</h3>
+              <p>A Procedural Town Generator inspired by Morthal from Skyrim made in Unity</p>
+            </div>
+            <i class="fab fa-unity left-aligned white-text" title="Created with Unity"></i>              
+            <div class="project-link">
+              <a href="https://github.com/CallMeTyy/ProceduralTown" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <a href="projects.html" class="btn btn-secondary">See More <i class="fas fa-arrow-right"></i></a>
+    </section>
+
+    <footer id="footer">
+      <div class="container">
+        <a href="mailto:tycho.tuitert@outlook.com">tycho.tuitert@outlook.com</a>
+        <!-- Social links -->
+        <div class="social">
+          <a href="#" target="_blank"
+            ><img src="./assets/linkedin-icon.svg" alt="Linkedin"
+          /></a>
+          <a href="#" target="_blank"><img src="./assets/github-icon.svg" alt="GitHub" /></a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
 </html>
