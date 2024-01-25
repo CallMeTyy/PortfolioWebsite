@@ -151,6 +151,10 @@ h2::selection {
   background: url(../assets/project/Project78Bow.png) center center/cover;
 }
 
+#project78blog{
+  background: url(../assets/project/blog.png) center center/cover;
+}
+
 #apollo{
   background: url(../assets/project/Compressed/ApolloArena.jpg) center center/cover;
 }
