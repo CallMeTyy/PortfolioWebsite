@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Primary Meta Tags -->
+    <title>Ty's Portfolio</title>
+    <meta name="title" content="Ty's Portfolio" />
+    <meta
+      name="description"
+      content="Ty's Portfolio Website!"
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://tychotuitert.dev/"
+    />
+    <meta property="og:title" content="Ty's Portfolio" />
+    <meta
+      property="og:description"
+      content="Ty's Portfolio Website!"
+    />
+    <meta
+      property="og:image"
+      content="tychotuitert.dev/assets/preview.png"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://tychotuitert.dev/"
+    />
+    <meta property="twitter:title" content="Ty's Portfolio" />
+    <meta
+      property="twitter:description"
+      content="Ty's Portfolio Website!"
+    />
+    <meta
+      property="twitter:image"
+      content="tychotuitert.dev/assets/preview.png"
+    />
+
+    <!-- Link -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/favicon/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="../assets/favicon/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="../assets/favicon/android-chrome-512x512.png"
+    />
+    <link rel="icon" type="image/x-icon" href="../assets/favicon/favicon.ico" />
+    <link rel="manifest" href="../assets/favicon/site.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/utilities.css" />
+  </head>
+  <body>
+    <header id="hero">
+      <!-- Navbar -->
+      <nav class="navbar">
+        <div class="container">
+          <!-- Logo -->
+          <h1 id="logo">
+            <a href="../index.html"
+              ><img src="../assets/logo.png" alt="Your Logo"
+            /></a>
+          </h1>
+          <!-- Navbar links -->
+          <ul class="nav-menu">
+            <li><a class="nav-link" href="../projects.html">PROJECTS</a></li>
+            <li><a class="nav-link" href="../contact.html">CONTACT</a></li>
+            <!--<li><a class="nav-link" href="#">RESUME</a></li>-->
+            <li>
+              <a
+                class="nav-link btn btn-primary"
+                href="../resume.html"
+                >RESUME <i class="fas fa-arrow-right"></i
+              ></a>
+            </li>
+
+            <!-- Toggle switch -->
+            <div class="theme-switch">
+              <input type="checkbox" id="switch"/>
+              <label class="toggle-icons" for="switch">
+                <img class="moon" src="../assets/moon.svg" />
+                <img class="sun" src="../assets/sun.svg" />
+              </label>
+            </div>
+            <!-- Hamburger menu -->
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </nav>
+
+      <section class="header-container">
+        <div class="content-text">
+          <h2>Project 78 - Bow & Arrow</h2><br>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/eY4JxQpCBJA?si=8SncDpUlYFa-fXcu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/-sGgk63UIRQ?si=ZLO6w69yQgEMuGda" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          -->
+          <div class="central-info">
+            <h3>General Information</h3>
+            <p>
+              <b>Summary:  </b> The bow and the arrows are one of the main features I focused on during development on Project 78. For now it is only available in game, but I am planning on creating a plugin for it in the future.
+              <br>
+              <b>Coding Platform:</b> Unreal<br>
+              <b>Target Platform:</b> PCVR<br>
+              <b>Development Time:</b> 20 weeks<br>
+            </p>
+            <h3>Description</h3>
+            <p>
+              The bow and the arrow types all have their own unique interactions with the world, all of them having a tie to physics.<br><br>
+              <b>The arrow types:</b><br>
+              - <b>Standard Arrows:</b> Standard arrows don't have any side effects and apply a force to whatever is hit. It deals the most amount of damage to enemies, and is the first arrow unlocked.<br>
+              - <b>Glue Arrows:</b> Glue arrows slow down enemies and allow you to glue all objects together! Create a bridge, a staircase or maybe even a jetpack!<br>
+              - <b>Ice Arrows:</b> Ice arrows have special interactions with water and can freeze it up. It also creates slippery areas wherever it lands. If you have a lot of enemies on your tail, you might want to consider employing some ice arrows to temporarily freeze them or turn them into ice cubes!<br>
+              - <b>Thruster Arrows:</b> Thruster arrows apply a large constant force to whatever it hits. This allows you to create all sorts of cool interactions such as vehicles or jetpacks! Although maybe it is enough to just make enemies blast away.<br>
+              
+              
+              
+              <section id="games" class="project-container container thumbnailimg">
+                <div class="division"></div>
+                <div class="content-text">
+                  <h2></h2>
+                  <p></p>
+                </div>
+                <article class="project">
+
+                  <div onclick="location.href='Project78.html'" class="card" id="project78" title="View more...">
+                    <div class="project-info">
+                      <div class="project-bio">
+                        <h3>Project 78</h3>
+                        <p></p>
+                      </div>
+                      <div class="project-link">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div onclick="location.href='Project78-IKRig.html'" class="card" id="project78ik" title="View more...">
+                    <div class="project-info">
+                      <div class="project-bio">
+                        <h3>Project 78 - IK</h3>
+                        <p></p>
+                      </div>
+                      <div class="project-link">
+                      </div>
+                    </div>
+                  </div>
+
+                </article>
+              </section>
+            </p>
+          </div>
+        </div>
+      </section>
+    </header>
+
+
+    <footer id="footer">
+      <div class="container">
+        <a href="mailto:tycho.tuitert@outlook.com">tycho.tuitert@outlook.com</a>
+        <!-- Social links -->
+        <div class="social">
+          <a href="https://linkedin.com/in/tychotuitert/" target="_blank"
+            ><img src="../assets/linkedin-icon.svg" alt="Linkedin"
+          /></a>
+          <a href="https://github.com/CallMeTyy/" target="_blank"><img src="../assets/github-icon.svg" alt="GitHub" /></a>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/script.js"></script>
+  </body>
+</html>

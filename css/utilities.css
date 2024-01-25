@@ -139,6 +139,18 @@ h2::selection {
 
 /* Project Images */
 
+#project78{
+  background: url(../assets/project/Compressed/Project78.png) center center/cover;
+}
+
+#project78ik{
+  background: url(../assets/project/Project78IK.png) center center/cover;
+}
+
+#project78ba{
+  background: url(../assets/project/Project78Bow.png) center center/cover;
+}
+
 #apollo{
   background: url(../assets/project/Compressed/ApolloArena.jpg) center center/cover;
 }
