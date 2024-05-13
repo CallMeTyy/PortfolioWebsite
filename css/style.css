@@ -79,6 +79,7 @@ body {
 
   background-position: top center;
   background-attachment: scroll;
+  
   backdrop-filter: blur(10px) brightness(var(--brightness));
 }
 
@@ -86,7 +87,7 @@ body {
   background: var(--bg-primary);
   color: var(--text-color);
   font-family: "Raleway", sans-serif;
-  padding: 50px 30px;
+  padding: 50px 75px;
   line-height: 1.5;
   border-radius: 25px;
   filter: drop-shadow(var(--project-shadow));
