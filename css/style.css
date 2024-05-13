@@ -20,6 +20,8 @@
 
   --shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
 
+  --project-shadow: 1px 2px 2px gray;
+
   /* Font Weight */
   --weight-small: 400;
   --weight-semibold: 600;
@@ -43,6 +45,7 @@
   --card-background: #111111;
   --bg-secondary-two: #f4f4f4;
   --shadow: 0 2px 10px rgba(95, 95, 95, 0.2);
+  --project-shadow: 1px 2px 2px black;
   --brightness: 70%;
 }
 
@@ -86,7 +89,7 @@ body {
   padding: 50px 30px;
   line-height: 1.5;
   border-radius: 25px;
-  filter: drop-shadow(1px 2px 2px black);
+  filter: drop-shadow(var(--project-shadow));
 }
 
 .cvwrapper{
