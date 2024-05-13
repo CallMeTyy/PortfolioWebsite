@@ -73,6 +73,15 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
+document.body.onscroll = function myFunction() {  
+  var scrolltotop = document.scrollingElement.scrollTop;
+  var target = document.body;
+  var xvalue = "center";
+  var factor = 0.5;
+  var yvalue = scrolltotop * factor;
+  target.style.backgroundPosition = xvalue + " " + yvalue + "px";
+}
+
 //Adding date
 
 let myDate = document.querySelector("#datee");

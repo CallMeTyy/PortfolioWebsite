@@ -1,10 +1,3 @@
-/* ?This is where reusable styling of this template will be. 
-   !Will contain things like:
-   * Button styling
-   * Background color styling
-   * padding and margin
-*/
-
 .container {
   max-width: var(--width-medium);
   margin: 0 auto;
@@ -140,7 +133,11 @@ h2::selection {
 /* Project Images */
 
 #project78{
-  background: url(../assets/project/Compressed/Project78.png) center center/cover;
+  background: url(../assets/project/Compressed/Project78.png) center center/cover;  
+}
+
+#project78uc{
+  background: url(../assets/project/Project78.png) center center/cover;
 }
 
 #project78ik{
@@ -158,6 +155,10 @@ h2::selection {
 #apollo{
   background: url(../assets/project/Compressed/ApolloArena.jpg) center center/cover;
 }
+#apollouc{
+  background: url(../assets/project/ApolloArena.png) center center/cover;
+}
+
 #uelabvr{
   background: url(../assets/project/Compressed/UELabVR.jpg) center center/cover;
 }
@@ -212,7 +213,7 @@ h2::selection {
 
 .thumbnailimg{
   max-width: 90vw;
-  width: 1000px;
+  width: 560px;
 }
 
 /* Media Queries */

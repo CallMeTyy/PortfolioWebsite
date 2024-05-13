@@ -29,6 +29,8 @@
   --width-small: 600px;
   --width-medium: 1100px;
   --width-large: 1300px;
+
+  --brightness: 100%;
 }
 
 [data-theme="dark"] {
@@ -41,6 +43,7 @@
   --card-background: #111111;
   --bg-secondary-two: #f4f4f4;
   --shadow: 0 2px 10px rgba(95, 95, 95, 0.2);
+  --brightness: 70%;
 }
 
 html {
@@ -70,6 +73,19 @@ body {
   color: var(--text-color);
   font-family: "Raleway", sans-serif;
   line-height: 1.5;
+
+  background-position: top center;
+  background-attachment: scroll;
+  backdrop-filter: blur(10px) brightness(var(--brightness));
+}
+
+#bodybg{
+  background: var(--bg-primary);
+  color: var(--text-color);
+  font-family: "Raleway", sans-serif;
+  padding: 50px 30px;
+  line-height: 1.5;
+  border-radius: 25px;
 }
 
 .cvwrapper{
