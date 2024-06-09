@@ -132,6 +132,14 @@ h2::selection {
 
 /* Project Images */
 
+#burdemon{
+  background: url(../assets/project/Burdemon.png) center center/cover;  
+}
+
+#burdemonig{
+  background: url(../assets/project/Compressed/Burdemon.jpg) center center/cover;  
+}
+
 #project78{
   background: url(../assets/project/Compressed/Project78.png) center center/cover;  
 }
