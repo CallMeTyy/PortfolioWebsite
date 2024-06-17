@@ -140,6 +140,10 @@ h2::selection {
   background: url(../assets/project/Compressed/CPR.png) center center/cover;  
 }
 
+#cpr-2{
+  background: url(../assets/project/Compressed/CPR-Back.png) center center/cover;  
+}
+
 #burdemonig{
   background: url(../assets/project/Compressed/Burdemon.jpg) center center/cover;  
 }
