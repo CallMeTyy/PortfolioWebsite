@@ -136,6 +136,10 @@ h2::selection {
   background: url(../assets/project/Burdemon.png) center center/cover;  
 }
 
+#cpr{
+  background: url(../assets/project/Compressed/CPR.png) center center/cover;  
+}
+
 #burdemonig{
   background: url(../assets/project/Compressed/Burdemon.jpg) center center/cover;  
 }

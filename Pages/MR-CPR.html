@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QGNEEB4XS2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-QGNEEB4XS2');
+    </script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Primary Meta Tags -->
+    <title>Ty's Portfolio</title>
+    <meta name="title" content="Ty's Portfolio" />
+    <meta
+      name="description"
+      content="Ty's Portfolio Website!"
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://tychotuitert.dev/"
+    />
+    <meta property="og:title" content="Ty's Portfolio" />
+    <meta
+      property="og:description"
+      content="Ty's Portfolio Website!"
+    />
+    <meta
+      property="og:image"
+      content="tychotuitert.dev/assets/preview.png"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://tychotuitert.dev/"
+    />
+    <meta property="twitter:title" content="Ty's Portfolio" />
+    <meta
+      property="twitter:description"
+      content="Ty's Portfolio Website!"
+    />
+    <meta
+      property="twitter:image"
+      content="tychotuitert.dev/assets/preview.png"
+    />
+
+    <!-- Link -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/favicon/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="../assets/favicon/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="../assets/favicon/android-chrome-512x512.png"
+    />
+    <link rel="icon" type="image/x-icon" href="../assets/favicon/favicon.ico" />
+    <link rel="manifest" href="../assets/favicon/site.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/utilities.css" />
+  </head>
+  <body id="cpr">
+    <header id="hero">
+      <!-- Navbar -->
+      <nav class="navbar">
+        <div class="container">
+          <!-- Logo -->
+          <h1 id="logo">
+            <a href="../index.html"
+              ><img src="../assets/logo.png" alt="Your Logo"
+            /></a>
+          </h1>
+          <!-- Navbar links -->
+          <ul class="nav-menu">
+            <li><a class="nav-link" href="../projects.html">PROJECTS</a></li>
+            <li><a class="nav-link" href="../contact.html">CONTACT</a></li>
+            <!--<li><a class="nav-link" href="#">RESUME</a></li>-->
+            <li>
+              <a
+                class="nav-link btn btn-primary"
+                href="../resume.html"
+                >RESUME <i class="fas fa-arrow-right"></i
+              ></a>
+            </li>
+
+            <!-- Toggle switch -->
+            <div class="theme-switch">
+              <input type="checkbox" id="switch"/>
+              <label class="toggle-icons" for="switch">
+                <img class="moon" src="../assets/moon.svg" />
+                <img class="sun" src="../assets/sun.svg" />
+              </label>
+            </div>
+            <!-- Hamburger menu -->
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </nav>
+
+      <section class="header-container">
+        <div class="content-text" id="bodybg">
+          <h2>Mixed Reality CPR Training</h2><br>
+          <!--https://youtu.be/8WUG2c9FOGk  -  https://youtu.be/GvWx2pVQlB4-->
+          <img src="../assets/project/Compressed/CPR2.png" class="thumbnailimg">
+          
+          <div class="central-info">
+            <h3>General Information</h3>
+            <p>
+              <b>Summary:</b> The MR CPR training was made in colaboration with SeriousXR as part of my thesis. It serves as a prototype in which several stressors were applied and evaluated on their effectivess together with CPR certified testers.<br>
+              <b>Coding Platform:</b> Unity Engine<br>
+              <b>Target Platform:</b> Standalone VR (Recommended for Quest 3)<br>
+              <b>Development Time:</b> 20 Weeks<br>
+              <b>Developed under <a href="https://serious-xr.com/" target="_blank">SeriousXR</a></b>
+            </p>
+            <h3>Description & Contributions</h3>
+            <p>
+              This project was developed with the intention of doing research on a more psychological level and really research into how users interact with MR. 
+              I did all development in the project, and only relied on the use of commercially available free 3D models and animations. Sounds were also imported.
+              I had no previous experience with AR before starting this project, nor did I ever use hand tracking. Everything was self-taught throughout my graduation period.
+              <br><br>
+              <b>My Contributions</b><br>
+              I worked on this project by myself. OpenXR was used in combination with XRHands and meta supported plugins to serve as the backbone of the project.
+              These are the main focus points of development throughout the project:<br>
+              - Desiging and prototyping several different stressors<br>
+              - Creating an AI that can act as a bystander or a "sick" person.<br>
+              - Hand tracking with gesture implementations<br>              
+              - AR aspects such as bringing real life furniture to a virtual environment<br>
+              - Recreating the basics of CPR such as compressions that work on analogue dolls or pillows<br>       
+              - Menu selection, UI, multiple language support (Dutch and English), tutorial and other gameplay aspects<br>
+              <br>An altered version of the thesis can soon be found here. Whether the application itself can be shared is still awaiting approval. 
+              <br><br>A video can be found here showcasing the entire application below:      
+            </p>
+            <br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Zt-KFj5RRbk?si=w_rG0U9KZx6iNK3J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+      </section>
+    </header>
+
+
+    <footer id="footer">
+      <div class="container">
+        <a href="mailto:tycho.tuitert@outlook.com">tycho.tuitert@outlook.com</a>
+        <!-- Social links -->
+        <div class="social">
+          <a href="https://linkedin.com/in/tychotuitert/" target="_blank"
+            ><img src="../assets/linkedin-icon.svg" alt="Linkedin"
+          /></a>
+          <a href="https://github.com/CallMeTyy/" target="_blank"><img src="../assets/github-icon.svg" alt="GitHub" /></a>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
