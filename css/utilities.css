@@ -243,6 +243,10 @@ h2::selection {
     border-radius: 0px;
     margin:0;
   }
+
+  body {
+    overflow: hidden;
+  }
   
 
   .content-text h2 {
