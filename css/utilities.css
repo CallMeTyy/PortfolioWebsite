@@ -245,7 +245,7 @@ h2::selection {
   }
 
   body {
-    overflow: hidden;
+    overflow-x: hidden;
   }
   
 
