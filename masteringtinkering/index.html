@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Google tag (gtag.js) -->
+ <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QGNEEB4XS2"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -9,7 +9,7 @@
       gtag('js', new Date());
 
       gtag('config', 'G-QGNEEB4XS2');
-    </script>
+    </script>   
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -41,7 +41,7 @@
     <meta property="twitter:card" content="summary_large_image" />
     <meta
       property="twitter:url"
-      content="https://tychotuitert.dev/"
+      content="https://github.com/CommunityPro/portfolio-html"
     />
     <meta property="twitter:title" content="Ty's Portfolio" />
     <meta
@@ -57,42 +57,42 @@
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="assets/favicon/apple-touch-icon.png"
+      href="../assets/favicon/apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="/assets/favicon/favicon-16x16.png"
+      href="..//assets/favicon/favicon-16x16.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="assets/favicon/favicon-32x32.png"
+      href="../assets/favicon/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="192x192"
-      href="assets/favicon/android-chrome-192x192.png"
+      href="../assets/favicon/android-chrome-192x192.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="512x512"
-      href="assets/favicon/android-chrome-512x512.png"
+      href="../assets/favicon/android-chrome-512x512.png"
     />
-    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico" />
-    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+    <link rel="icon" type="image/x-icon" href="../assets/favicon/favicon.ico" />
+    <link rel="manifest" href="../assets/favicon/site.webmanifest" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
       integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/utilities.css" />
   </head>
   <body>
     <header id="hero">
@@ -102,28 +102,28 @@
           <!-- Logo -->
           <h1 id="logo">
             <a href="index.html"
-              ><img src="./assets/logo.png" alt="Your Logo"
+              ><img src="../assets/logo.png" alt="Your Logo"
             /></a>
           </h1>
           <!-- Navbar links -->
           <ul class="nav-menu">
-            <li><a class="nav-link" href="projects.html">PROJECTS</a></li>
-            <li><a class="nav-link" href="contact.html">CONTACT</a></li>
-            <!--<li><a class="nav-link" href="#">RESUME</a></li>-->
+            <li><a class="nav-link" href="../projects.html">PROJECTS</a></li>
+            <li><a class="nav-link" href="../contact.html">CONTACT</a></li>
+             <!--<li><a class="nav-link" href="#">RESUME</a></li>-->
             <li>
               <a
                 class="nav-link btn btn-primary"
-                href="resume.html"
+                href="../resume.html"
                 >RESUME <i class="fas fa-arrow-right"></i
               ></a>
             </li>
 
             <!-- Toggle switch -->
             <div class="theme-switch">
-              <input type="checkbox" id="switch"/>
+              <input type="checkbox" id="switch" />
               <label class="toggle-icons" for="switch">
-                <img class="moon" src="assets/moon.svg" />
-                <img class="sun" src="assets/sun.svg" />
+                <img class="moon" src="../assets/moon.svg" />
+                <img class="sun" src="../assets/sun.svg" />
               </label>
             </div>
             <!-- Hamburger menu -->
@@ -135,29 +135,43 @@
           </div>
         </div>
       </nav>
-
-      <section class="header-container">
-        <img
-          class="profile-image-alt"
-          src="assets/pic-me-new.JPG"
-          alt=""
-        />
-        <h1>Hoi! I am Tycho</h1>
-
-        <div class="content-text">
-          <h2>Game Programmer &</h2>
-          <h2>VR Enthusiast</h2>
-
-          <p>
-            A programmer focussed on creating both entertaining and serious games for Virtual Reality or PC.
-          </p>
-        </div>
-        <a href="https://www.linkedin.com/in/tychotuitert/" class="btn btn-secondary" target="_blank">Find me on LinkedIn</a>
-        <a href="https://github.com/CallMeTyy/" class="btn btn-secondary" target="_blank">Follow my GitHub</a>
-        <a href="https://www.youtube.com/channel/UC-Ps335mTfS23h3TOwdGzdQ" class="btn btn-secondary" target="_blank">Find me on YouTube</a>
-      </section>
     </header>
 
+    <!-- Games & Projects -->
+    <section id="games" class="project-container container">
+      <div class="division"></div>
+      <div class="content-text">
+        <h2>Mastering Tinkering Portfolio</h2>
+        <p>Welcome to my Mastering Tinkering portfolio, showcasing my projects and assigments completed throughout the course.
+        </p>
+      </div>
+
+      <article class="project">
+
+        <div onclick="location.href='pages/template.html'" href="" class="card" id="template" title="View more...">
+          <div class="project-info">
+            <div class="project-bio">
+              <h3>Template</h3>
+              <p>An empty project template for future use.</p>
+            </div>
+            <!-- <i class="fab fa-unity left-aligned" title="Created with Unity"></i>          -->
+            <div class="project-link">
+            </div>
+          </div>
+        </div>  
+
+
+      </article>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="project-container container">
+      <div class="division"></div>
+      <div class="content-text">
+      </div>
+      <article class="project">
+      </article>
+    </section>
 
     <footer id="footer">
       <div class="container">
@@ -171,6 +185,6 @@
         </div>
       </div>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="../js/script.js"></script>
   </body>
 </html>

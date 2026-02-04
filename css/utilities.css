@@ -132,6 +132,10 @@ h2::selection {
 
 /* Project Images */
 
+#template{
+  background: url(../assets/project/Template.jpg) center center/cover;  
+}
+
 #burdemon{
   background: url(../assets/project/Burdemon.png) center center/cover;  
 }
@@ -243,13 +247,11 @@ h2::selection {
     border-radius: 0px;
     margin:0;
   }
-<<<<<<< Updated upstream
 
   body {
     overflow-x: hidden;
   }
-=======
->>>>>>> Stashed changes
+
   
 
   .content-text h2 {
