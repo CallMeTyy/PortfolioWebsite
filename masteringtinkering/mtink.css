@@ -1,0 +1,15 @@
+#buildingblocks{
+  background: url(./assets/buildingblocks/thmbnl.png) center center/cover;  
+}
+
+#lab1{
+  background: url(./assets/lab1/postit1.jpeg) center center/cover;  
+}
+
+#tinkersafari{
+  background: url(./assets/tinkerspace/design-lab.jpeg) center center/cover;  
+}
+
+#template{
+  background: url(../assets/project/Template.jpg) center center/cover;  
+}

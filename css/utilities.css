@@ -132,6 +132,14 @@ h2::selection {
 
 /* Project Images */
 
+figcaption{
+  max-width: 60%;
+}
+
+#tinkersafari{
+  background: url(../masteringtinkering/assets/tinkerspace/design-lab.jpeg) center center/cover;  
+}
+
 #template{
   background: url(../assets/project/Template.jpg) center center/cover;  
 }
