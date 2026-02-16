@@ -26,8 +26,11 @@
 /* === Table CSS === */
 
 /* Container respects your 600px max width */
+/* Wrapper respects your layout (change max-width if needed) */
 .table-wrap {
-  width: 1200px;
+  position: relative;      /* for the top-right toggle button */
+  width: 100%;
+  max-width: 1200px;        /* <- change to 1200px if you want */
   margin: 0 auto;
 }
 
@@ -45,12 +48,12 @@
   width: 100%;
   border-collapse: separate;
   border-spacing: 0;
-  min-width: 980px; /* forces scroll so it's still comparable */
+  min-width: 980px; /* forces scroll so it stays comparable */
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   color: rgba(255, 255, 255, 0.88);
 }
 
-/* Header row */
+/* Header row (sticky) */
 .compare-table thead th {
   position: sticky;
   top: 0;
@@ -64,7 +67,7 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.14);
 }
 
-/* First column (row names) sticky so comparison stays easy */
+/* First column (row names) sticky */
 .compare-table .rowhead {
   position: sticky;
   left: 0;
@@ -87,32 +90,47 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-/* Zebra striping for readability */
-.compare-table tbody tr:nth-child(even) td {
-  background: rgba(255, 255, 255, 0.03);
-}
-
-/* Keep the sticky rowhead matching zebra */
-.compare-table tbody tr:nth-child(even) .rowhead {
-  background: #16181b;
-}
-
-/* Subtle hover (optional but nice) */
-.compare-table tbody tr:hover td {
-  background: rgba(255, 255, 255, 0.05);
-}
-
-/* Make long text wrap nicely */
+/* Wrap long text */
 .compare-table td {
   max-width: 260px;
   white-space: normal;
   word-break: break-word;
 }
 
-/* Optional: nicer scrollbar on dark themes (works in Chromium/WebKit) */
-.table-scroll::-webkit-scrollbar {
-  height: 10px;
+/* Zebra striping (skip highlighted cells) */
+.compare-table tbody tr:nth-child(even) td:not(.cell-good):not(.cell-bad) {
+  background: rgba(255, 255, 255, 0.03);
 }
+.compare-table tbody tr:nth-child(even) .rowhead {
+  background: #16181b;
+}
+
+/* Hover (skip highlighted cells) */
+.compare-table tbody tr:hover td:not(.cell-good):not(.cell-bad) {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* Highlight cells (always visible) */
+.compare-table td.cell-good {
+  background: rgba(34, 197, 94, 0.18) !important;
+  box-shadow: inset 0 0 0 1px rgba(34, 197, 94, 0.45);
+}
+
+.compare-table td.cell-bad {
+  background: rgba(239, 68, 68, 0.18) !important;
+  box-shadow: inset 0 0 0 1px rgba(239, 68, 68, 0.45);
+}
+
+/* Optional: slightly stronger highlight on hover */
+.compare-table tbody tr:hover td.cell-good {
+  background: rgba(34, 197, 94, 0.22) !important;
+}
+.compare-table tbody tr:hover td.cell-bad {
+  background: rgba(239, 68, 68, 0.22) !important;
+}
+
+/* Optional: nicer scrollbar on dark themes (Chromium/WebKit) */
+.table-scroll::-webkit-scrollbar { height: 10px; }
 .table-scroll::-webkit-scrollbar-track {
   background: rgba(255, 255, 255, 0.06);
   border-radius: 999px;
@@ -122,5 +140,34 @@
   border-radius: 999px;
 }
 .table-scroll::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255);
+  background: rgba(255, 255, 255, 0.26);
 }
+
+/* Top-right toggle button */
+.table-toggle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 20;
+  padding: 6px 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(15, 15, 16, 0.85);
+  color: rgba(255, 255, 255, 0.9);
+  font: 600 12px/1 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  cursor: pointer;
+  backdrop-filter: blur(6px);
+}
+
+.table-toggle:hover {
+  border-color: rgba(255, 255, 255, 0.28);
+}
+
+.table-toggle:focus-visible {
+  outline: 2px solid rgba(56, 189, 248, 0.6);
+  outline-offset: 2px;
+}
+
+/* Swap views */
+.table-view { display: none; }
+.table-view.is-active { display: block; }
