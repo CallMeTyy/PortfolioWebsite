@@ -81,6 +81,11 @@ body {
   background-attachment: scroll;
   
   backdrop-filter: blur(10px) brightness(var(--brightness));
+  
+  /* Add these lines: */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 #bodybg{
@@ -181,6 +186,7 @@ form button{
   display: flex;
   flex-direction: column;
   height: 100%;
+  flex: 1; /* Add this line */
 }
 
 .profile-image {
