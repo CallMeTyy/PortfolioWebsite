@@ -1,3 +1,11 @@
+#tinkmaterials2{
+  background: url(./assets/materials/img2.png) center center/cover;
+}
+
+#tinkmaterials3{
+  background: url(./assets/materials/lego-mindstorms.jpg) center center/cover;
+}
+
 #pmet{
   background: url(./assets/pmetaphor/7complex-program.jpg) center center/cover;
 }
@@ -297,4 +305,12 @@
 
 .central-info .widewalls-list li {
   margin: 0.35rem 0;
+}
+
+.card {
+  box-shadow: inset 0 -200px 1000px 10px rgba(0, 0, 0, 0.7);
+}
+
+.card:hover {
+  box-shadow: inset 0 -100px 1000px 10px rgba(0, 0, 0, 0.8);
 }
