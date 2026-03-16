@@ -301,6 +301,7 @@
   text-align: left;
   margin: 0;
   padding-left: 1.5rem;
+  max-width: 700px;
 }
 
 .central-info .widewalls-list li {
