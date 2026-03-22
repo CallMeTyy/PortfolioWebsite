@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dialogue Tree Editor</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="app-root" class="dte-app">
+  <header class="topbar">
+    <div class="brand">
+      <h1>Dialogue Tree Editor</h1>
+      <p>Create nodes, wire categories to new nodes, and export everything to JSON.</p>
+    </div>
+    <div class="toolbar">
+      <button id="add-dialogue" class="primary">+ Dialogue node</button>
+      <button id="add-end" class="subtle">+ End node</button>
+      <button id="export-json">Export JSON</button>
+      <button id="import-json">Import JSON</button>
+      <button id="reset-board" class="subtle">Reset</button>
+      <input id="import-file" type="file" accept="application/json,.json" class="hidden" />
+    </div>
+  </header>
+
+  <div class="statusbar">
+    <div id="status" class="status">Wheel zooms, middle mouse pans, and right-click opens the add-node menu.</div>
+    <div id="counts" class="status">0 nodes · 100% zoom</div>
+  </div>
+
+  <div id="layout" class="layout">
+    <div class="workspace-shell">
+      <div id="workspace" class="workspace">
+        <div id="workspace-content" class="workspace-content">
+          <div id="graph-stage" class="graph-stage">
+            <svg id="connections"></svg>
+            <div id="canvas"></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="context-menu" class="context-menu hidden">
+        <div class="context-menu-title">Add at cursor</div>
+        <button id="menu-add-dialogue" type="button">+ Dialogue node</button>
+        <button id="menu-add-end" type="button">+ End node</button>
+      </div>
+    </div>
+
+    <aside class="sidebar">
+      <div class="sidebar-head">
+        <h2>Help</h2>
+        <button id="toggle-sidebar" class="sidebar-toggle" type="button" title="Collapse help">⇤</button>
+      </div>
+      <div class="sidebar-mini-label">Help</div>
+
+      <div class="sidebar-copy">
+        <section>
+          <h3 class="sidebar-card-title">How it works</h3>
+          <p>
+            Each node has one input at the top. Dialogue nodes can have any number of output categories, and every category gets its own exit on the right side.
+          </p>
+          <p class="mt-8">
+            Use <strong>Text</strong> for a fixed response, or <strong>AI answer</strong> when the runtime should generate the reply dynamically.
+          </p>
+        </section>
+
+        <section>
+          <h3 class="sidebar-card-title">Controls</h3>
+          <p>Scroll wheel: zoom in and out of the graph.</p>
+          <p class="mt-8">Middle mouse / wheel press: pan the canvas.</p>
+          <p class="mt-8">Right click: open the add-node menu at the cursor.</p>
+        </section>
+
+        <section>
+          <h3 class="sidebar-card-title">Connecting nodes</h3>
+          <p>
+            Click a category exit on the right of a dialogue node, then click the input port on another node. Click the unlink button beside a category to clear its connection.
+          </p>
+        </section>
+
+        <section>
+          <h3 class="sidebar-card-title">Exported JSON</h3>
+          <p>
+            The exported file contains node positions, titles, response mode, response content, output categories, and their target node IDs, so you can reload or process it elsewhere.
+          </p>
+        </section>
+      </div>
+    </aside>
+  </div>
+
+  
+  </div>
+  <noscript><p style="padding:16px;font-family:system-ui,sans-serif;">This editor needs JavaScript enabled.</p></noscript>
+  <script src="app.js" defer></script>
+</body>
+</html>
