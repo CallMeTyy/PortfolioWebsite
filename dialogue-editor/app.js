@@ -4,6 +4,29 @@
       const ZOOM_MIN = 0.1;
       const ZOOM_MAX = 2.5;
       const ZOOM_STEP = 1.1;
+      const GESTURE_OPTIONS = [
+        'None',
+        'AI',
+        'BigSmile',
+        'Blink',
+        'BrowFrown',
+        'BrowRaise',
+        'CloseEyes',
+        'ExpressAnger',
+        'ExpressDisgust',
+        'ExpressFear',
+        'ExpressSad',
+        'GazeAway',
+        'Nod',
+        'Oh',
+        'OpenEyes',
+        'Roll',
+        'Shake',
+        'Smile',
+        'Surprise',
+        'Throughtful',
+        'Wink'
+      ];
 
       const layout = document.getElementById('layout');
       const canvas = document.getElementById('canvas');
@@ -43,6 +66,7 @@
           x,
           y,
           title: 'New dialogue node',
+          gesture: 'None',
           response: {
             mode: 'text',
             content: ''
@@ -141,6 +165,7 @@
                 type: node.type,
                 position: { x: node.x, y: node.y },
                 title: node.title,
+                gesture: String(node.gesture || 'None'),
                 response: {
                   mode: node.response.mode,
                   content: node.response.content
@@ -190,6 +215,8 @@
           const responseMode = rawNode.response?.mode === 'ai' || rawNode.responseType === 'ai' ? 'ai' : 'text';
           const responseContent = String(rawNode.response?.content ?? rawNode.responseText ?? rawNode.botResponse ?? '');
           const outputsRaw = Array.isArray(rawNode.outputs) ? rawNode.outputs : [];
+          const importedGesture = String(rawNode.gesture ?? rawNode.response?.gesture ?? 'None');
+          const gesture = GESTURE_OPTIONS.includes(importedGesture) ? importedGesture : 'None';
 
           return {
             id,
@@ -197,6 +224,7 @@
             x,
             y,
             title,
+            gesture,
             response: {
               mode: responseMode,
               content: responseContent
@@ -452,6 +480,19 @@
             });
             responseField.appendChild(responseTextarea);
             nodeEl.appendChild(responseField);
+
+            const gestureField = createField('Starting gesture');
+            const gestureSelect = document.createElement('select');
+            gestureSelect.innerHTML = GESTURE_OPTIONS.map(function (gestureName) {
+              return '<option value="' + escapeHtml(gestureName) + '">' + escapeHtml(gestureName) + '</option>';
+            }).join('');
+            gestureSelect.value = GESTURE_OPTIONS.includes(String(node.gesture)) ? node.gesture : 'None';
+            gestureSelect.addEventListener('change', function (event) {
+              node.gesture = event.target.value;
+              saveToLocalStorage();
+            });
+            gestureField.appendChild(gestureSelect);
+            nodeEl.appendChild(gestureField);
 
             const outputsWrap = document.createElement('div');
             outputsWrap.className = 'outputs';
