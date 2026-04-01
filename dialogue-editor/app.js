@@ -66,7 +66,7 @@
           x,
           y,
           title: 'New dialogue node',
-          gesture: 'None',
+          gesture: 'AI',
           response: {
             mode: 'text',
             content: ''
@@ -215,8 +215,8 @@
           const responseMode = rawNode.response?.mode === 'ai' || rawNode.responseType === 'ai' ? 'ai' : 'text';
           const responseContent = String(rawNode.response?.content ?? rawNode.responseText ?? rawNode.botResponse ?? '');
           const outputsRaw = Array.isArray(rawNode.outputs) ? rawNode.outputs : [];
-          const importedGesture = String(rawNode.gesture ?? rawNode.response?.gesture ?? 'None');
-          const gesture = GESTURE_OPTIONS.includes(importedGesture) ? importedGesture : 'None';
+          const importedGesture = String(rawNode.gesture ?? rawNode.response?.gesture ?? 'AI');
+          const gesture = GESTURE_OPTIONS.includes(importedGesture) ? importedGesture : 'AI';
 
           return {
             id,
@@ -486,7 +486,7 @@
             gestureSelect.innerHTML = GESTURE_OPTIONS.map(function (gestureName) {
               return '<option value="' + escapeHtml(gestureName) + '">' + escapeHtml(gestureName) + '</option>';
             }).join('');
-            gestureSelect.value = GESTURE_OPTIONS.includes(String(node.gesture)) ? node.gesture : 'None';
+            gestureSelect.value = GESTURE_OPTIONS.includes(String(node.gesture)) ? node.gesture : 'AI';
             gestureSelect.addEventListener('change', function (event) {
               node.gesture = event.target.value;
               saveToLocalStorage();
