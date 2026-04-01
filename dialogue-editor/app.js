@@ -47,6 +47,7 @@
             mode: 'text',
             content: ''
           },
+          outputLabelInstruction: '',
           outputs: [
             {
               id: uid('out'),
@@ -144,6 +145,7 @@
                   mode: node.response.mode,
                   content: node.response.content
                 },
+                outputLabelInstruction: String(node.outputLabelInstruction || ''),
                 outputs: node.outputs.map((output) => ({
                   id: output.id,
                   label: output.label,
@@ -199,6 +201,7 @@
               mode: responseMode,
               content: responseContent
             },
+            outputLabelInstruction: String(rawNode.outputLabelInstruction || rawNode.outputCategoryInstruction || ''),
             outputs: outputsRaw.map((rawOutput, outputIndex) => ({
               id: String(rawOutput.id || uid('out') + '_' + outputIndex),
               label: String(rawOutput.label || rawOutput.category || 'category'),
@@ -457,6 +460,18 @@
             outputsHead.className = 'outputs-head';
             outputsHead.innerHTML = '<strong>Output categories</strong>';
             outputsWrap.appendChild(outputsHead);
+
+            const outputInstructionInput = document.createElement('input');
+            outputInstructionInput.type = 'text';
+            outputInstructionInput.className = 'output-instruction-input';
+            outputInstructionInput.value = node.outputLabelInstruction || '';
+            outputInstructionInput.placeholder = 'Optional: how AI should choose category labels';
+            outputInstructionInput.setAttribute('aria-label', 'Output category label instruction');
+            outputInstructionInput.addEventListener('input', function (event) {
+              node.outputLabelInstruction = event.target.value;
+              saveToLocalStorage();
+            });
+            outputsWrap.appendChild(outputInstructionInput);
 
             const outputsList = document.createElement('div');
             outputsList.className = 'outputs-list';
