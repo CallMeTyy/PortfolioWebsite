@@ -1,0 +1,441 @@
+      /* Extra template styling that matches the existing portfolio language */
+      .mt-template-note {
+        text-align: left;
+        margin: 1rem auto 0;
+        max-width: 850px;
+        padding: 0.9rem 1rem;
+        border-radius: 16px;
+        background: rgba(255, 205, 66, 0.14);
+        border: 1px solid rgba(255, 205, 66, 0.35);
+      }
+
+      .mt-page-intro {
+        max-width: 850px;
+        margin: 0 auto;
+      }
+
+      .mt-page-intro p {
+        text-align: center;
+      }
+
+      .mt-meta-line {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.6rem;
+        margin: 0.5rem auto 1rem;
+      }
+
+      .mt-pill,
+      .mt-toc a {
+        display: inline-block;
+        padding: 0.38rem 0.8rem;
+        border-radius: 999px;
+        background: var(--card-background);
+        color: var(--text-color);
+        border: 1px solid rgba(127, 127, 127, 0.15);
+        font-size: 0.9rem;
+        font-weight: 700;
+      }
+
+      .mt-pill {
+        text-decoration: none;
+      }
+
+      .mt-hero-visual {
+        margin: 1.25rem auto 0;
+        width: min(100%, 900px);
+      }
+
+      .mt-hero-visual img,
+      .mt-media img,
+      .mt-gallery img,
+      .mt-photo-strip img {
+        width: 100%;
+        display: block;
+        border-radius: 16px;
+      }
+
+      .mt-placeholder-media {
+        width: 100%;
+        min-height: 240px;
+        border-radius: 16px;
+        border: 2px dashed rgba(127, 127, 127, 0.3);
+        background:
+          linear-gradient(135deg, rgba(255, 205, 66, 0.08), rgba(127, 127, 127, 0.04));
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 1.5rem;
+        font-weight: 700;
+      }
+
+      .mt-toc {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.6rem;
+        justify-content: center;
+        margin: 1.25rem auto 0;
+        max-width: 950px;
+      }
+
+      .mt-section {
+        margin-top: 2.2rem;
+        text-align: left;
+        scroll-margin-top: 110px;
+      }
+
+      .mt-section > p,
+      .mt-section li,
+      .mt-process-entry p,
+      .mt-note-card p,
+      .mt-mini-card p,
+      .mt-checklist p,
+      .mt-ref-list li {
+        max-width: none;
+      }
+
+      .mt-section h3 {
+        margin-top: 0;
+      }
+
+      .mt-card-grid,
+      .mt-gallery,
+      .mt-photo-strip,
+      .mt-ref-grid,
+      .mt-split,
+      .mt-metrics {
+        display: grid;
+        gap: 1rem;
+      }
+
+      .mt-card-grid {
+        grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+      }
+
+      .mt-gallery {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      }
+
+      .mt-photo-strip {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      }
+
+      .mt-ref-grid {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      }
+
+      .mt-split {
+        grid-template-columns: minmax(0, 1.05fr) minmax(280px, 0.95fr);
+        align-items: start;
+      }
+
+      .mt-metrics {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      }
+
+      .mt-mini-card,
+      .mt-checklist,
+      .mt-process-entry,
+      .mt-note-card,
+      .mt-metric {
+        background: rgba(127, 127, 127, 0.08);
+        border: 1px solid rgba(127, 127, 127, 0.15);
+        border-radius: 18px;
+        padding: 1rem 1.1rem;
+      }
+
+      .mt-checklist ul,
+      .mt-ref-list,
+      .mt-copy-list,
+      .mt-section ul {
+        list-style: disc;
+        list-style-position: outside;
+        padding-left: 1.3rem;
+        margin: 0.55rem 0 0;
+      }
+
+      .mt-checklist li,
+      .mt-ref-list li,
+      .mt-copy-list li,
+      .mt-section li {
+        margin: 0.32rem 0;
+      }
+
+      .mt-inline-facts {
+        margin-top: 0.85rem;
+        font-size: 0.95rem;
+      }
+
+      .mt-inline-facts b {
+        display: inline-block;
+        min-width: 135px;
+      }
+
+      .mt-process-entry + .mt-process-entry {
+        margin-top: 1rem;
+      }
+
+      .mt-process-entry h4 {
+        margin: 0 0 0.55rem;
+        font-size: 1.05rem;
+      }
+
+      .mt-step-kicker {
+        display: inline-block;
+        margin-bottom: 0.4rem;
+        font-size: 0.85rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        color: var(--text-color);
+        opacity: 0.75;
+      }
+
+      .mt-note-card {
+        margin-top: 0.9rem;
+      }
+
+      .mt-figure {
+        margin: 0;
+      }
+
+      .mt-figure figcaption,
+      .mt-media figcaption,
+      .mt-gallery figure figcaption {
+        margin-top: 0.45rem;
+        font-size: 0.95rem;
+        text-align: left;
+        max-width: 100%;
+        opacity: 0.9;
+      }
+
+      .mt-gallery figure,
+      .mt-photo-strip figure,
+      .mt-media {
+        margin: 0;
+      }
+
+      .mt-copy-hint {
+        font-style: italic;
+        opacity: 0.8;
+      }
+
+      .mt-subtle {
+        opacity: 0.85;
+      }
+
+      .mt-anchor {
+        text-decoration: none;
+      }
+
+      .mt-anchor:hover,
+      .mt-toc a:hover {
+        background: var(--primary-color);
+        color: #111;
+      }
+
+      .mt-spacer {
+        height: 0.4rem;
+      }
+
+      @media (max-width: 900px) {
+        .mt-split {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .mt-meta-line {
+          gap: 0.4rem;
+        }
+
+        .mt-placeholder-media {
+          min-height: 180px;
+        }
+      }
+
+      .mt-table-intro {
+        margin-bottom: 1rem;
+      }
+
+      .mt-table-note {
+        margin-top: 0.8rem;
+        padding: 0.9rem 1rem;
+        border-radius: 16px;
+        background: rgba(127, 127, 127, 0.08);
+        border: 1px solid rgba(127, 127, 127, 0.15);
+      }
+
+      .mt-table-note p,
+      .mt-material-card p {
+        max-width: none;
+      }
+
+      .mt-material-card-wrap {
+        display: grid;
+        gap: 1rem;
+      }
+
+      .mt-material-card {
+        background: rgba(127, 127, 127, 0.08);
+        border: 1px solid rgba(127, 127, 127, 0.15);
+        border-radius: 18px;
+        padding: 1rem 1.1rem;
+      }
+
+      .mt-material-card h4 {
+        margin-bottom: 0.5rem;
+      }
+
+      .mt-table-caption {
+        margin: 0.6rem 0 0;
+        font-size: 0.95rem;
+        opacity: 0.9;
+      }
+
+      .mt-fill-tip {
+        margin-top: 0.55rem;
+        font-size: 0.92rem;
+        font-style: italic;
+        opacity: 0.82;
+      }
+
+      .mt-material-subsection + .mt-material-subsection {
+        margin-top: 1.5rem;
+      }
+
+      .mt-material-subsection h4 {
+        margin-bottom: 0.45rem;
+      }
+
+      .mt-nowrap {
+        white-space: nowrap;
+      }
+
+      /* Simplified materials section */
+      .table-wrap {
+        position: static;
+        width: 100%;
+        max-width: none;
+        margin: 0;
+      }
+
+      .table-scroll {
+        border: none;
+        border-radius: 0;
+        background: transparent;
+      }
+
+    
+
+
+/* Theme-aware table overrides for the assignment template */
+.compare-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  min-width: 980px;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: var(--text-color);
+  background: transparent;
+}
+
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.compare-table thead th {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  background: var(--card-background);
+  color: var(--text-color);
+  text-align: left;
+  font-weight: 700;
+  font-size: 12px;
+  padding: 10px;
+  border-bottom: 1px solid rgba(127, 127, 127, 0.22);
+}
+
+.compare-table .rowhead {
+  position: sticky;
+  left: 0;
+  z-index: 4;
+  background: var(--card-background) !important;
+  color: var(--text-color) !important;
+  font-weight: 800;
+  white-space: nowrap;
+  min-width: 170px;
+  border-right: 1px solid rgba(127, 127, 127, 0.18);
+}
+
+.compare-table tbody td,
+.compare-table tbody th {
+  vertical-align: top;
+  font-size: 12px;
+  line-height: 1.35;
+  padding: 10px;
+  border-bottom: 1px solid rgba(127, 127, 127, 0.14);
+  background: transparent;
+}
+
+.compare-table td {
+  max-width: 260px;
+  white-space: normal;
+  word-break: break-word;
+}
+
+.compare-table tbody tr:nth-child(even) td:not(.cell-good):not(.cell-bad) {
+  background: rgba(127, 127, 127, 0.05);
+}
+
+.compare-table tbody tr:nth-child(even) .rowhead {
+  background: rgba(127, 127, 127, 0.09);
+}
+
+.compare-table tbody tr:hover td:not(.cell-good):not(.cell-bad) {
+  background: rgba(127, 127, 127, 0.08);
+}
+
+.compare-table tbody tr:hover .rowhead {
+  background: rgba(127, 127, 127, 0.12);
+}
+
+.compare-table td.cell-good {
+  background: rgba(34, 197, 94, 0.16) !important;
+  box-shadow: inset 0 0 0 1px rgba(34, 197, 94, 0.38);
+}
+
+.compare-table td.cell-bad {
+  background: rgba(239, 68, 68, 0.14) !important;
+  box-shadow: inset 0 0 0 1px rgba(239, 68, 68, 0.34);
+}
+
+.compare-table tbody tr:hover td.cell-good {
+  background: rgba(34, 197, 94, 0.2) !important;
+}
+
+.compare-table tbody tr:hover td.cell-bad {
+  background: rgba(239, 68, 68, 0.18) !important;
+}
+
+.table-scroll::-webkit-scrollbar {
+  height: 10px;
+}
+
+.table-scroll::-webkit-scrollbar-track {
+  background: rgba(127, 127, 127, 0.08);
+  border-radius: 999px;
+}
+
+.table-scroll::-webkit-scrollbar-thumb {
+  background: rgba(127, 127, 127, 0.28);
+  border-radius: 999px;
+}
+
+.table-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(127, 127, 127, 0.4);
+}
